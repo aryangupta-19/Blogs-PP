@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login.css">
+    <title>Login page</title>
+</head>
+<body>
+    <div class="login-page">
+            <h1> WELCOME TO BLOGS...</h1>
+            <img src="/img/me.jpg" class="profile-img" alt="myImg">
+            <h3>LOGIN PAGE</h3>
+        
+        <form method="get" action="/posts" class="login">
+            <label name="username" id="username">Username:  </label>
+            <input placeholder="Enter username" name="username" id="username" type="text" required></input>
+            <br>
+            <label name="password" id="password">Password:  </label>
+            <input placeholder="Enter password" name="password" id="password" type="password" required></input>
+            <br><br><br>
+            <button>Submit</button>
+        </form>
+    </div>
+    <%-include("includes/footer.ejs")%>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <h1 id="nav">Place nav for Blogs here!!!</h1>
+    
+    <div class="posts-container">
+        <% for(let post of posts){ %>
+            <div class="post">
+                <h4 id="user">Username: @<%=post.username%></h4>
+                <!-- <h4 id="img"></h4> -->
+                <img src="<%=post.img%>" alt="post image" width="300" height="200">
+                <p id="caption"><%=post.caption%></p>
+                
+                <div class="likes">
+                    <i class="fa-solid fa-heart" id="like-icon"></i>
+                    <p id="likes"><%=post.likes%></p>
+                </div>
+                <p id="cmnts">comments: <%=post.comments%></p>
+                <div class="sh-ed-btn">
+                    <a href="http://localhost:5173/posts/<%=post.id%>" id="show-post-btn"> Show post</a>
+                    <a href="http://localhost:5173/posts/<%=post.id%>/edit" id="show-post-btn"> Edit post</a>
+                    <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                        <Button id="dlt-post">Delete Post</Button>
+                    </form>
+                </div>
+            </div>
+        <%}%>
+        <a href="http://localhost:5173/posts/new" id="create-btn"> Create new Post</a>
+
+        <!-- vvvvv imp detail (small but necessary ) -->
+        <!-- note before creating btn first create file where this btn will be redirecting you -->
+         <!-- like here in this anchor tag it will to u to new.ejs which shows form so first create new.ejs and then copy its link 
+          from browser and paster here in href -->
+    </div>
+
+    <%-include("includes/footer.ejs")%>
+    
+</body>
+</html>
+
+<!-- again icons ko show karne ke liye first copy this link from 
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ font-awesome.cdn top link thend irectly use icons from fontawesom.com -->

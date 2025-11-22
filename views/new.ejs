@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+</head>
+<body>
+    <h1>Creae a new Post here </h1>
+    <form method="post" action="/posts">
+        <label id="username">Username: </label>
+        <input name="username" id="username" type="text" placeholder="Enter username"/>
+        <br>
+
+        <label id="password"> Password: </label>
+        <input name="password" id="username" type="text" placeholder="Enter username"/>
+        <br>
+
+        <label id="img-link"> Enter img link: </label>
+        <input name="img" id="img-link" type="link"/>
+        <br>
+        
+        <label id="content">Content: </label>
+        <textarea name="cotent" id="username" placeholder="Enter content you want to show on post..." rows="5" cols="35"></textarea>
+        <br>
+
+        <label id="likes">Likes</label>
+        <input name="likes" type="number">
+        <br>
+        <label id="comments">comments</label>
+        <input  name="comments" type="number">
+        <br><br>
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
+
+<!-- name is very imp input other wise it gives output as undefined 
+ 
+MaxListenersError => restart server  gets auto resolved is not more than 11 event listeners used -->
+
