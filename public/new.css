@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(15, 37, 81);
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: rgb(237, 146, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(18, 40, 86);
+    font-size:3rem;
+    text-align :center;
+}
+form{
+    padding:3rem;
+    background-color: rgb(18, 40, 86);
+    text-align:center;
+}
+
+label{
+    font-size: 1.4rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    font-size: 1.25rem;
+    margin: 1rem 0 0.5rem 0.5rem;
+    color: rgb(255, 200, 100);
+    font-weight: 500;
+}
+input, textarea{
+    width: 60%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.likes-cmnts{
+    display:flex;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    gap:1rem;
+}
+#likes, #comments{
+    /* border-radius:10px;
+    font-size:1.2em;
+    width:auto;
+    margin-top:2rem; */
+    width: 100px;   /* smaller width */
+    display: inline-block;
+    /* margin-left: 1rem; */
+    /* background: rgba(255, 255, 255, 0.2); */
+}
+
+button{
+    margin-top: 1.5rem;
+    display: block;
+    width: fit-content;
+    padding: 0.7rem;
+    font-size: 1.3rem;
+    background-color: #e4b256;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+hr{
+    border: 1px solid #e4b256;
+    box-shadow: 1px 1px 7px #e4b256;
+}

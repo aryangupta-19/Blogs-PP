@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Post</title>
+    <link rel="stylesheet" href="/new.css">
 </head>
 <body>
     <h1>Creae a new Post here </h1>
     <form method="post" action="/posts">
         <label id="username">Username: </label>
-        <input name="username" id="username" type="text" placeholder="Enter username"/>
+        <input name="username" id="username" type="text" placeholder="Enter username" required/>
         <br>
 
         <label id="password"> Password: </label>
-        <input name="password" id="username" type="text" placeholder="Enter username"/>
+        <input name="password" id="password" type="text" placeholder="Enter username" required/>
         <br>
 
         <label id="img-link"> Enter img link: </label>
-        <input name="img" id="img-link" type="link"/>
+        <input name="img" id="img-link" type="link" required/>
         <br>
         
         <label id="content">Content: </label>
-        <textarea name="cotent" id="username" placeholder="Enter content you want to show on post..." rows="5" cols="35"></textarea>
+        <textarea name="content" id="content" placeholder="Enter content you want to show on post..." rows="5" cols="35" required></textarea>
         <br>
-
-        <label id="likes">Likes</label>
-        <input name="likes" type="number">
-        <br>
-        <label id="comments">comments</label>
-        <input  name="comments" type="number">
-        <br><br>
+        <hr>
+        <div class="likes-cmnts">
+            <label id="likes">Likes</label>
+            <input name="likes" type="number"  value="10" id="likes">
+            <br>
+            <label id="comments">comments</label>
+            <input  name="comments" type="number" id="comments" value="10">
+            <br><br>
+        </div>
         <button>Submit</button>
     </form>
     
