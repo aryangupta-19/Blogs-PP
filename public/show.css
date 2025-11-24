@@ -1,0 +1,80 @@
+body{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 37, 81);
+
+}
+
+#post-id{
+    color:rgb(0, 254, 0);
+    font-size:0.8rem;
+    position: fixed;
+    bottom: 10px;  
+    right: 10px;   
+    margin: 0;
+}
+.post{
+    /* background-color:rgb(242, 189, 125);
+    height: 430px;
+    width:fit-content;
+    height:fit-content;
+    padding: 30px 30px 10px 30px;
+    border:2px solid orange;
+    border-radius:14px;
+    box-shadow: 5px 5px 6px rgb(255, 170, 11);
+ */
+ background-color: rgb(255, 244, 229); 
+    width: 90%;                             
+    max-width: 700px;                      
+    margin: 40px auto;                    
+    padding: 40px 50px;                     
+    border: 2px solid orange;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Softer shadow */
+}
+
+#user{
+    font-size:1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(237, 146, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(18, 40, 86);
+    font-size:3rem;
+    text-align :center;
+    margin-top:1rem;
+}
+
+#caption{
+    font-size:1.2rem;
+    color:rgb(67, 66, 66);
+}
+
+.likes{
+    display:flex;
+    align-items:center;
+    height:30px;
+    padding-top:4px;
+    font-weight:bolder;
+    font-style:arial;
+}
+#cmnts{
+    font-size:1.2rem;
+}
+
+#like-icon{
+    color:red;
+}
+
+#date, #time{
+    color:rgb(80, 74, 74);
+    line-height:0.4rem;
+    font-weight:872;
+    font-family:'Times New Roman', Times, serif;
+    font-size:small;
+    text-align:right;
+}

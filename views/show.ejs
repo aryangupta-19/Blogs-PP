@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Show Post </title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/show.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <h1>Your Post </h1>
-    <h4> your id:<%=post.id%></h4>
 
     <div class="post">
         <h4 id="user">Username: @<%=post.username%></h4>
-        <img src="<%=post.img%>" alt="post image" width="300" height="200">
+        <img src="<%=post.img%>" alt="post image" width="500" height="300">
         <p id="caption"><%=post.caption%></p>
         <div class="likes">
             <i class="fa-solid fa-heart" id="like-icon"></i>
             <p id="likes"><%=post.likes%></p>
         </div>
-        <p id="cmnts">comments: <%=post.comments%></p>
-        <h5>date and time</h5>
+        <p id="cmnts">Comments: <%=post.comments%></p>
+        <p id="date">Added : 19/12/2005</p>
+        <p id="time"> Time : 5:30 GMT</p>
     </div>
+    <h4 id="post-id"> your id:<%=post.id%></h4>
 
     
 </body>
