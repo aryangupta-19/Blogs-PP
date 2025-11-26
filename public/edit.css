@@ -1,0 +1,97 @@
+/* Page Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    margin: 0;
+
+    background: linear-gradient(135deg, rgb(10, 25, 60), rgb(15, 37, 81));
+    color: rgb(237, 146, 0);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: rgb(237, 146, 0);
+    background-color: rgba(18, 40, 86, 0.8);
+
+    font-size: 2.8rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+
+
+h4 {
+    margin-top: 0.8rem;
+    background-color: rgba(18, 40, 86, 0.9);
+
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+
+    font-size: 1.2rem;
+    color: #ffd382;
+}
+
+form {
+    padding: 2.5rem;
+    background-color: rgba(18, 40, 86, 0.95);
+
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 2rem;
+
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
+    width: 350px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    resize: vertical;
+
+    font-size: 1rem;
+    padding: 10px;
+
+    border: 2px solid #e4b256;
+    background: #f9f3e2;
+    color: #111;
+
+    border-radius: 8px;
+    outline: none;
+
+    transition: 0.2s;
+}
+
+textarea:focus {
+    border-color: #ffcf6b;
+    box-shadow: 0px 0px 8px rgba(255, 204, 120, 0.7);
+}
+
+button {
+    font-size: 1.5em;
+    color: black;
+
+    background-color: #e4b256;
+    border: 2px solid black;
+    border-radius: 6px;
+
+    padding: 10px 30px;
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+button:hover {
+    background-color: #ffd382;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}

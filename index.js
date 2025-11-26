@@ -27,7 +27,7 @@ let posts = [
         id: uuidv4(),
         username: "aryangupta",
         img: "https://images.unsplash.com/photo-1761839258657-457dda39b5cc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2670",
-        caption: "Attitude killer",
+        caption: "I can show you the world.",
         likes: 980,
         comments: 140,
     },
@@ -35,7 +35,7 @@ let posts = [
         id: uuidv4(),
         username: "abhaygupta",
         img: "https://plus.unsplash.com/premium_photo-1761295133736-8c68192dd522?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2670",
-        caption: "Attitude killer",
+        caption: "Be happy, it drives people crazy.",
         likes: 900,
         comments: 102,
     },
@@ -43,7 +43,7 @@ let posts = [
         id: uuidv4(),
         username: "safalchaubey",
         img: "https://images.unsplash.com/photo-1761839257961-4dce65b72d99?ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3264",
-        caption: "Attitude killer",
+        caption: "But first, let me take a selfie.",
         likes: 89,
         comments: 112,
     },
@@ -51,7 +51,7 @@ let posts = [
         id: uuidv4(),
         username: "avnigupta",
         img: "https://images.unsplash.com/photo-1513682121497-80211f36a7d3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1288",
-        caption: "Attitude killer",
+        caption: "Escape the ordinary.",
         likes: 90,
         comments: 112,
     },
@@ -59,7 +59,7 @@ let posts = [
         id: uuidv4(),
         username: "symuncorpo",
         img: "https://images.unsplash.com/photo-1735753817845-a85f65b94df7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1287",
-        caption: "Attitude killer",
+        caption: " Life is too short for bad vibes.",
         likes: 90,
         comments: 112,
     },
@@ -67,7 +67,7 @@ let posts = [
         id: uuidv4(),
         username: "icrowreus",
         img: "https://images.unsplash.com/photo-1762319981432-609103ab4a75?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2675",
-        caption: "Attitude killer",
+        caption: "Sunkissed and blessed.",
         likes: 90,
         comments: 112,
     }
@@ -86,7 +86,7 @@ app.get("/posts/new", (req, res)=>{
 app.post("/posts", (req, res) => {
     let{username, img, caption, likes, comments} = req.body; // recall in post req extrace data from req.body using deconstruc method
     posts.push({id: uuidv4(), username, img, caption, likes, comments});    // for emage enter link of image from unsplash
-    // console.log(posts); 
+    console.log(posts); 
     res.redirect("/posts");
     
 })
